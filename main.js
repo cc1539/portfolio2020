@@ -32,9 +32,11 @@ window.onload = function() {
 				let elem = document.createElement("li");
 				elem.className = "project-card";
 				elem.innerHTML = project.name;
+				elem.style["background-image"] = "url('media/image/projects/"+project.face+"')";
 				let desc = document.createElement("p");
 				desc.innerHTML = project.desc;
-				desc.style["font-size"] = "12px";
+				desc.style["font-size"] = "11px";
+				desc.style["margin-top"] = "12px";
 				elem.appendChild(desc);
 				elem.onclick = function() {
 					document.href = project.link;
