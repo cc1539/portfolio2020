@@ -34,6 +34,7 @@ window.onload = function() {
 				elem.innerHTML = project.name;
 				let desc = document.createElement("p");
 				desc.innerHTML = project.desc;
+				desc.style["font-size"] = "12px";
 				elem.appendChild(desc);
 				elem.onclick = function() {
 					document.href = project.link;
