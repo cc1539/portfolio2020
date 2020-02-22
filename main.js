@@ -28,7 +28,19 @@ window.onload = function() {
 	xhttp.open("GET","data/projects.json");
 	xhttp.onreadystatechange = function() {
 		if(xhttp.readyState==4 && xhttp.status==200) {
-			
+			for(let project of JSON.parse(xhttp.responseText)) {
+				let elem = document.createElement("li");
+				elem.className = "project-card";
+				elem.innerHTML = project.name;
+				let desc = document.createElement("p");
+				desc.innerHTML = project.desc;
+				elem.appendChild(desc);
+				elem.onclick = function() {
+					document.href = project.link;
+				};
+				console.log(project.demo);
+				projects.appendChild(elem);
+			}
 		}
 	};
 	xhttp.onerror = function() {
