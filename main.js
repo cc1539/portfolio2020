@@ -35,6 +35,7 @@ window.onload = function() {
 				elem.style["background-image"] = "url('media/image/projects/"+project.face+"')";
 				let desc = document.createElement("p");
 				desc.innerHTML = project.desc;
+				desc.style.position = "relative";
 				desc.style["font-size"] = "11px";
 				desc.style["margin-top"] = "12px";
 				elem.appendChild(desc);
