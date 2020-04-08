@@ -3,13 +3,13 @@
 		"name":"black hole simulator",
 		"desc":"this program simulates the gravitational field around ur mum lmao",
 		"image":"assets/image/project/bhlw.png",
-		"github":""
+		"github":"https://github.com/cc1539/pf19-bhv-v2"
 	},
 	{
 		"name":"super duper xor cryptosystem",
 		"desc":"download this program b4 encryption becomes illegal",
 		"image":"assets/image/project/xorcrypto.png",
-		"github":""
+		"github":"https://github.com/cc1539/pf19-xor-cryptosystem"
 	},
 	{
 		"name":"lagrange chemical fluid simulation",
@@ -27,7 +27,7 @@
 		"name":"rutgercoleg (actual name)",
 		"desc":"game that encompasses rutgeres experience",
 		"image":"assets/image/project/ruger.png",
-		"github":""
+		"github":"https://github.com/syall/rutgercoleg"
 	},
 	{
 		"name":"simple platformer game engine",
@@ -39,7 +39,7 @@
 		"name":"alphabet explosion android app",
 		"desc":"i can make app on phone too, am i part of iot gang yet",
 		"image":"assets/image/project/androidtest.png",
-		"github":""
+		"github":"https://github.com/cc1539/pf19-android-test"
 	},
 	{
 		"name":"conway's game of many lives",
@@ -51,6 +51,6 @@
 		"name":"circadian tetris",
 		"desc":"can't clear pieces directly, instead pieces and spaces invert periodically",
 		"image":"assets/image/project/circtetris.png",
-		"github":""
+		"github":"https://github.com/cc1539/pf19-circadian-tetris"
 	}
 ]
