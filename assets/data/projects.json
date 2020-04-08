@@ -2,13 +2,13 @@
 	{
 		"name":"black hole simulator",
 		"desc":"this program simulates the gravitational field around ur mum lmao",
-		"image":"",
+		"image":"assets/image/project/bhlw.png",
 		"github":""
 	},
 	{
 		"name":"super duper xor cryptosystem",
 		"desc":"download this program b4 encryption becomes illegal",
-		"image":"",
+		"image":"assets/image/project/xorcrypto.png",
 		"github":""
 	},
 	{
@@ -26,7 +26,7 @@
 	{
 		"name":"rutgercoleg (actual name)",
 		"desc":"game that encompasses rutgeres experience",
-		"image":"",
+		"image":"assets/image/project/ruger.png",
 		"github":""
 	},
 	{
@@ -38,7 +38,7 @@
 	{
 		"name":"alphabet explosion android app",
 		"desc":"i can make app on phone too, am i part of iot gang yet",
-		"image":"",
+		"image":"assets/image/project/androidtest.png",
 		"github":""
 	},
 	{
@@ -50,7 +50,7 @@
 	{
 		"name":"circadian tetris",
 		"desc":"can't clear pieces directly, instead pieces and spaces invert periodically",
-		"image":"",
+		"image":"assets/image/project/circtetris.png",
 		"github":""
 	}
 ]
