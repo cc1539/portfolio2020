@@ -5,9 +5,15 @@ function manageMenuPanel() {
 	if(window.innerWidth>840) {
 		menu_panel.style = "left:0;";
 		content_panel.style = ""
+		document.querySelector(".project-image-panel,.project-desc").forEach(function(elem){
+			elem.style = "";
+		});
 	} else {
 		menu_panel.style = "";
-		content_panel.style = "width:calc(100% - 35px);"
+		content_panel.style = "width:calc(100% - 35px);";
+		document.querySelector(".project-image-panel,.project-desc").forEach(function(elem){
+			elem.style = "float:top; width:100%; height:50%;";
+		});
 	}
 }
 
