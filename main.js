@@ -5,7 +5,7 @@ function manageMenuPanel() {
 	if(window.innerWidth>840) {
 		menu_panel.style = "left:0;";
 		content_panel.style = ""
-		document.body.querySelectorAll(".project-image-panel,.project-desc").forEach(function(elem){
+		document.body.querySelectorAll(".project-image-panel,.project-desc,.project-image").forEach(function(elem){
 			elem.style = "";
 		});
 	} else {
@@ -13,6 +13,9 @@ function manageMenuPanel() {
 		content_panel.style = "width:calc(100% - 35px);";
 		document.body.querySelectorAll(".project-image-panel,.project-desc").forEach(function(elem){
 			elem.style = "float:top; width:100%; height:50%;";
+		});
+		document.body.querySelectorAll(".project-image").forEach(function(elem){
+			elem.style = "margin-top:117px;";
 		});
 	}
 }
