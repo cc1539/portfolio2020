@@ -1,0 +1,31 @@
+
+#content-title-panel > * {
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	width: calc(100% - var(--padding));
+	margin-left: calc(0px - var(--padding)/2);
+}
+
+#content-title-panel h1 {
+	transform: translateY(-100%);
+}
+
+@keyframes bobbing {
+	0% { margin-top: 0px; }
+	50% { margin-top: 20px; }
+	100% { margin-top: 0px; }
+}
+
+#content-title-panel h2 {
+	user-select: none;
+	animation-name: bobbing;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	transform: translateY(20px);
+}
+
+#content-title-panel > div {
+	transform: translateY(100px);
+}

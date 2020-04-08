@@ -1,0 +1,56 @@
+[
+	{
+		"name":"black hole simulator",
+		"desc":"this program simulates the gravitational field around ur mum lmao",
+		"image":"",
+		"github":""
+	},
+	{
+		"name":"super duper xor cryptosystem",
+		"desc":"download this program b4 encryption becomes illegal",
+		"image":"",
+		"github":""
+	},
+	{
+		"name":"lagrange chemical fluid simulation",
+		"desc":"liquids and gels with randomized chemical and physical properties",
+		"image":"",
+		"github":""
+	},
+	{
+		"name":"eulerian fluid simulation",
+		"desc":"surface tension implemented in grid-based fluid simulation",
+		"image":"",
+		"github":""
+	},
+	{
+		"name":"rutgercoleg (actual name)",
+		"desc":"game that encompasses rutgeres experience",
+		"image":"",
+		"github":""
+	},
+	{
+		"name":"simple platformer game engine",
+		"desc":"basic physics and scripting language",
+		"image":"",
+		"github":""
+	},
+	{
+		"name":"alphabet explosion android app",
+		"desc":"i can make app on phone too, am i part of iot gang yet",
+		"image":"",
+		"github":""
+	},
+	{
+		"name":"conway's game of many lives",
+		"desc":"game of life but many types of life with randomized rulesets",
+		"image":"",
+		"github":""
+	},
+	{
+		"name":"circadian tetris",
+		"desc":"can't clear pieces directly, instead pieces and spaces invert periodically",
+		"image":"",
+		"github":""
+	}
+]

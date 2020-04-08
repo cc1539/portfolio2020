@@ -1,0 +1,137 @@
+
+#menu-panel {
+	user-select: none;
+	position: fixed;
+	width: var(--menu-panel-width);
+	height: 100%;
+	background-color: var(--color0);
+	left: calc(30px - var(--menu-panel-width));
+	transition: left 0.2s ease;
+}
+
+#menu-panel:hover {
+	transition: left 0.2s ease;
+	left: 0;
+}
+
+@keyframes top_icon_cycle {
+	0% { background-image: url("../assets/image/icons/top/icon1.png"); }
+	33% { background-image: url("../assets/image/icons/top/icon2.png"); }
+	66% { background-image: url("../assets/image/icons/top/icon0.png"); }
+}
+
+@keyframes about_icon_cycle {
+	0% { background-image: url("../assets/image/icons/about/icon1.png"); }
+	33% { background-image: url("../assets/image/icons/about/icon2.png"); }
+	66% { background-image: url("../assets/image/icons/about/icon0.png"); }
+}
+
+@keyframes projects_icon_cycle {
+	0% { background-image: url("../assets/image/icons/projects/icon1.png"); }
+	33% { background-image: url("../assets/image/icons/projects/icon2.png"); }
+	66% { background-image: url("../assets/image/icons/projects/icon0.png"); }
+}
+
+@keyframes links_icon_cycle {
+	0% { background-image: url("../assets/image/icons/links/icon1.png"); }
+	33% { background-image: url("../assets/image/icons/links/icon2.png"); }
+	66% { background-image: url("../assets/image/icons/links/icon0.png"); }
+}
+
+@keyframes misc_icon_cycle {
+	0% { background-image: url("../assets/image/icons/misc/icon1.png"); }
+	33% { background-image: url("../assets/image/icons/misc/icon2.png"); }
+	66% { background-image: url("../assets/image/icons/misc/icon0.png"); }
+}
+
+.menu-icon::before {
+	content:
+		url("../assets/image/icons/top/icon0.png")
+		url("../assets/image/icons/top/icon1.png")
+		url("../assets/image/icons/top/icon2.png")
+		url("../assets/image/icons/about/icon0.png")
+		url("../assets/image/icons/about/icon1.png")
+		url("../assets/image/icons/about/icon2.png")
+		url("../assets/image/icons/projects/icon0.png")
+		url("../assets/image/icons/projects/icon1.png")
+		url("../assets/image/icons/projects/icon2.png")
+		url("../assets/image/icons/links/icon0.png")
+		url("../assets/image/icons/links/icon1.png")
+		url("../assets/image/icons/links/icon2.png")
+		url("../assets/image/icons/misc/icon0.png")
+		url("../assets/image/icons/misc/icon1.png")
+		url("../assets/image/icons/misc/icon2.png");
+	display: none;
+}
+
+.menu-icon {
+	--h-border: 50px;
+	--v-border: 20px;
+	--width: calc(var(--menu-panel-width) - var(--h-border)*2);
+	width: var(--width);
+	height: var(--width);
+	margin-left: var(--h-border);
+	margin-right: var(--h-border);
+	margin-top: calc(5px + var(--v-border));
+	margin-bottom: var(--v-border);
+	image-rendering: pixelated;
+	cursor: pointer;
+	background-image: url("../assets/image/icons/top/icon0.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.menu-button-icon {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	margin-top: -5px;
+	margin-left: calc(5px - var(--left-spacing));
+	image-rendering: pixelated;
+	cursor: pointer;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.menu-icon-animated {
+	animation-duration: 0.5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: steps(1);
+}
+
+.menu-icon:hover {
+	animation-name: top_icon_cycle;
+	animation-duration: 0.5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: steps(1);
+}
+
+#menu-panel > p {
+	--left-spacing: 40px;
+	--border-thickness: 10px;
+	cursor: pointer;
+	width: calc(100% - var(--border-thickness) - var(--left-spacing));
+	padding: 10px 0 10px var(--left-spacing);
+	margin: 10px 0 10px 0;
+	font-weight: bold;
+	background: linear-gradient(90deg,
+		var(--color2) var(--highlight-value),
+		var(--color1) var(--highlight-value));
+	color: black;
+	transition: all 0.1s ease;
+	--highlight-value: 0%;
+	border-right: var(--border-thickness) var(--color1) ridge;
+}
+
+#menu-panel > p:hover {
+	--hover-offset: 15px;
+	transition: all 0.1s ease;
+	padding-left: calc(var(--left-spacing) + var(--hover-offset));
+	width: calc(100% - var(--hover-offset) - var(--border-thickness) - var(--left-spacing));
+	--highlight-value: 100%;
+}
+
+#menu-panel > p:active {
+	padding-left: calc(var(--left-spacing) + 5px);
+	--highlight-value: 100%;
+}
