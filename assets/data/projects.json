@@ -14,8 +14,8 @@
 	{
 		"name":"lagrange chemical fluid simulation",
 		"desc":"liquids and gels with randomized chemical and physical properties",
-		"image":"",
-		"github":""
+		"image":"assets/image/project/chemical.png",
+		"github":"https://github.com/cc1539/pf20-chemical-fluid-sim"
 	},
 	{
 		"name":"eulerian fluid simulation",
