@@ -20,8 +20,8 @@
 	{
 		"name":"eulerian fluid simulation",
 		"desc":"surface tension implemented in grid-based fluid simulation",
-		"image":"",
-		"github":""
+		"image":"assets/image/project/gridfluid.png",
+		"github":"https://github.com/cc1539/pf20-fluid-grid"
 	},
 	{
 		"name":"rutgercoleg (actual name)",
