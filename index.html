@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Portfolio.20 | Christopher Cheng</title>
+		<title>Christopher Cheng | 2020</title>
 		
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1">
@@ -17,12 +17,15 @@
 		<script src="request.js" type="text/javascript"></script>
 		<script src="projects.js" type="text/javascript"></script>
 		<script src="main.js" type="text/javascript"></script>
+		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+		<script src="splash.js"></script>
 	</head>
 	<body>
 	
 		<div id="menu-panel">
 		
-			<div class="menu-icon" onclick="window.scroll(0,0);"></div>
+			<div class="menu-icon" onclick="window.scroll(0,0);parentNode.className='';"></div>
 			
 			<p class="menu-button">About</p>
 			<p class="menu-button">Projects</p>
@@ -38,77 +41,81 @@
 			
 				<div id="content-title-panel">
 					
-					<h1>welcom to CHRISTOPHER CHENG s portoflio</h1>
-					<h2>...we have...</h2>
+					<h1>Christopher Cheng's Portfolio</h1>
+					<h3>Scroll down and use the buttons to the left to navigate the page!</h3>
 					
 					<div>
-						<p>version control (this site is on github pages!)</p>
-						<p>cont. integration</p>
-						<p>cont. deployment</p>
-						<p>agility</p>
-						<p>p management (project management)</p>
-						<p>framework</p>
-						<p>library</p>
-						<p>plug in</p>
+						<p>...or stay up here for a while and look at the pretty patterns first, your decision.</p>
 					</div>
+					
 				</div>
 				
 				<div id="content-about-panel">
-					<p style="font-size:30px;">hello, my name is <b>christopher cheng</b></p>
-					<p>...but you can call me m45+0rh4x0r (master hacker!!!) aka master hcaker</p>
-					<p>yes yes i know but do not be scared, im one of the good ones</p>
+				
+					<p style="font-size:30px;">Hey there! You already know my <i>name</i>...</p>
+					<p>...but what about my <i>game</i>?</p>
+					
 					<br>
-					<p>i am a coleg student of rutgers new brunswick, have very good grade (last grade is 4.o (i bet you cannot beat that!))</p>
-					<p>i am graduates during the month of may 2020 and study ece (electrical and computer engineering 4 u simpletons (yea i said it, what you gonna do >:D) that dont know anything</p>
-					<p>if your wondering why such an intelligent person like me didn't go to hardvard, princeton, and mit, its because they were actually too STUPID to recognize my intellect and skill. if you have any self worth you will go to rurgers like me</p>
+					<h2>Education</h2>
+					<p>I graduated as an Honors College Scholar from the School of Engineering at Rutgers University, with a final cumulative GPA of 3.815 and a degree in Electrical & Computer Engineering. During the four years following up to my graduation, I gained a strong foundation in the fields of low-level and high-level computer architecture and programming. I also stayed on top of the hot new emerging technologies by taking courses such as Machine Learning and Quantum Computing. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					
 					<br>
-					<p>i have all the skills, the best skills around:</p>
-					<ul style="margin-left:40px;">
-						<li>version control (this site is on github pages!)</li>
-						<li>machine learning</li>
-						<li>cont. integration</li>
-						<li>cont. deployment</li>
-						<li>big data</li>
-						<li>agile</li>
-						<li>p management (project management)</li>
-						<li>blockchain</li>
-						<li>framework</li>
-						<li>library</li>
-						<li>soft</li>
-						<li>plug in</li>
+					<h2>Background</h2>
+					<p>I am an american-born-chinese male who has always had an interest in how the world around us worked. If I didn't pursue my degree in ECE, I would've definitely gone for a physics degree instead. Something about computer programming + physics, multimedia stuff. You can see evidence of my interest in physics by looking at the projects below. Ultimately though I determined that Computer Science was in a way the broader field, since it's applicable to all sorts of things, including physics, but also economics and lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					
+					<br>
+					<h2>Technical Skills</h2>
+					<p>Here is a list of topics/skills that I believe are relevant for the positions that I will be applying to in the forseeable future, and some of my thoughts on them.</p>
+					<ul>
+						<li><b>Version Control</b> - As may be evident from how this page and the projects listed below are published, my go-to version control software is Git.</li>
+						<li><b>Machine Learning</b> - I am capable of implementing classification, regression, and clustering algorithms, and have more than a passing knowledge of deep learning with neural networks.</li>
+						<li><b>Big Data</b> - I essentially see this as machine learning, but with more emphasis on logistics (should I run this algorithm / store this information on the cloud, or can I lorem ipsum dolor sit amet etc...)</li>
+						<li><b>Agile Development</b> - I find it strange that a word needed to be made for this; does a developer not essentially do "agile" for themselves already in the process of writing and testing their software?</li>
+						<li><b>Project Managment</b> - Got plenty of experience with this by working with a seven-member team in my Software Development class.</li>
+						<li><b>Blockchain</b> - I had a little look into Ethereum a little while back, because I was interested in how it could facilitate distributed computing. Small disclaimer; my skills might be a little outdated, since the relevant languages such as Solidity have been changing at a ridiculously fast pace, even as I was learning them in the past.</li>
+						<li><b>Knowledge of Frameworks</b> - Spring, .NET, etc.</li>
+						<li><b>Knowledge of Libraries</b> - I've used lots of libraries in Java, some of the more recent ones being beads, bluecove, and processing if you count that but that isn't too impressive. No, what I want a pat on the back for is figuring out how to properly add libraries for C++, with all the linking options and stuff, and having to re-build the source if your compiler is different from the one the developers used for their binaries, etc.</li>
+						<li><b>Knowledge of Popular Software</b> - The obvious mention here are Microsoft Office products, which I made extensive use of during my time at Rutgers University. I also made use of Adobe products, such as Photoshop. Coming back to programming, I have used VS2019, Code:Blocks, Eclipse, IntelliJ, and also just gcc without any IDE.</li>
 					</ul>
+					
 					<br>
-					<p>now give me the money or else i will hack your ip</p>
+					<h2>Purpose</h2>
+					<p>You see, the goal of my content is always to lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					
 				</div>
 				
 				<div id="content-projects-panel">
 					<h1>PROJECTS</h1>
-					<p>when you were having a life i studied the code</p>
+					<p>Here is a selection of software projects that I had worked on in the past. I chose these because I think they best demonstrate the extent of my technical skill and knowledge, while simultaneously highlighting my interests.</p>
 					
 				</div>
 				
 				<div id="content-links-panel">
 					<h1>LINKS</h1>
-					<p>frick social media</p>
+					<p>Here are some links to my other profiles.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 					
-					<a target="_blank" href="https://github.com/cc1539"><img src="assets/image/github.png"></a>
-					<a target="_blank" href="https://www.linkedin.com/in/christopher-cheng-75b900152/"><img src="assets/image/linkedin.png"></a>
+					<div id="profile-links">
+						<div><a target="_blank" href="https://github.com/cc1539">
+							<img src="assets/image/github.png"><div><p>GitHub</p></div>
+						</a></div>
+						<div><a target="_blank" href="https://www.linkedin.com/in/christopher-cheng-75b900152/">
+							<img src="assets/image/linkedin.png"><div><p>LinkedIn</p></div>
+						</a></div>
+					</div>
+					
 				</div>
 				
 				<div id="content-misc-panel">
-					<h1>Welcome to my <strike style="opacity:20%;">Website</strike>Portfolio!</h1>
-					<p>This is a sentence<a href="https://www.youtube.com/watch?v=3jslVQDGkLU">! Here's how you </a>make a link: <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Yeeocities</a></p>
-					<p>Here's how you can make <i>bold</i> and <b>italic</b> text.</p>
-					<p>Here's how you can add an image:</p>
-					<img src="assets/image/github.png">
-					<img src="assets/image/linkedin.png">
-					<p>Here's how to make a list:</p>
-					<ul>
-						<li>First thing</li>
-						<li>Second thing</li>
-						<li>Third thing</li>
-					</ul>
-					<p>To learn more about HTML/CSS, check out these <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">tutorials</a>!</p>
+					<h1>Miscellaneous</h1>
+					<br>
+					<h3>If you liked my stuff, you might also like to check out the stuff my friends made at the following links:</h3>
+					<br>
+					<p><b>Chris Cheng: </b><a href="https://cc1539.github.io/portfolio2020/">cc1539.github.io/portfolio2020/</a></p>
+					<p><b>Christoph Cheng: </b><a href="https://cc1539.github.io/portfolio2020/">cc1539.github.io/portfolio2020/</a></p>
+					<p><b>Christopher Cheng: </b><a href="https://cc1539.github.io/portfolio2020/">cc1539.github.io/portfolio2020/</a></p>
+					<br>
+					<p>Also, feel free to check out some of the lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
 				</div>
 				
 			</div>

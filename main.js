@@ -1,38 +1,35 @@
 
-function manageMenuPanel() {
-	let menu_panel = document.getElementById("menu-panel");
-	let content_panel = document.getElementById("content-panel");
-	if(window.innerWidth>840) {
+let mobile_thresh = 840;
+
+let menu_panel;
+let content_panel;
+
+function updatePageFormat() {
+	if(window.innerWidth>mobile_thresh) {
 		menu_panel.style = "left:0;";
-		content_panel.style = ""
-		document.body.querySelectorAll(".project-image-panel,.project-desc,.project-image").forEach(function(elem){
-			elem.style = "";
-		});
+		content_panel.style = "";
+		document.documentElement.style.setProperty("--content-padding","50px");
 	} else {
 		menu_panel.style = "";
 		content_panel.style = "width:calc(100% - 35px);";
-		document.body.querySelectorAll(".project-image-panel,.project-desc").forEach(function(elem){
-			elem.style = "float:top; width:100%; height:50%;";
-		});
-		document.body.querySelectorAll(".project-image").forEach(function(elem){
-			elem.style = "margin-top:117px;";
-		});
+		document.documentElement.style.setProperty("--content-padding","20px");
 	}
-}
-
-function randomLetter() {
-	let palette =
-		"abcdefghijklmnopqrstuvwxyz"+
-		"abcdefghijklmnopqrstuvwxyz".toUpperCase()+
-		"0123456789";
-	let i = Math.floor(Math.random()*palette.length);
-	return palette.substring(i,i+1);
 }
 
 window.onload = function() {
 	
-	manageMenuPanel();
+	menu_panel = document.getElementById("menu-panel");
+	content_panel = document.getElementById("content-panel");
 	
+	updatePageFormat();
+	
+	menu_panel.addEventListener("mouseover",function(){
+		menu_panel.className = "menu-panel-hover";
+	});
+	
+	menu_panel.addEventListener("mouseleave",function(){
+		menu_panel.className = "";
+	});
 	
 	let button_names = ["about","projects","links","misc"];
 	let menu_buttons = document.getElementsByClassName("menu-button");
@@ -53,26 +50,17 @@ window.onload = function() {
 		let panel = document.getElementById("content-"+button_names[i]+"-panel");
 		menu_buttons[i].onclick = function() {
 			window.scroll(0,panel.getBoundingClientRect().top+window.scrollY);
+			if(window.innerWidth<=mobile_thresh) {
+				menu_panel.className = "";
+			}
 		}
 		menu_buttons[i].prepend(icon);
 	}
 	
-	
-	setInterval(function(){
-		let misc_content = document.getElementById("content-misc-panel").querySelectorAll("p,li,h1");
-		for(let i=0;i<misc_content.length;i++) {
-			let inner_html = misc_content[i].innerHTML;
-			misc_content[i].innerHTML = "";
-			for(let j=0;j<inner_html.length;j++) {
-				misc_content[i].innerHTML += randomLetter();
-			}
-		}
-	},100);
-	
-	
-	loadResource("assets/data/projects.json",function(responseText){
-		buildProjectPanel(JSON.parse(responseText));
+	loadResource("assets/data/projects.json",function(){
+		buildProjectPanel(JSON.parse(this.responseText));
 	});
 	
 };
-window.onresize = manageMenuPanel;
+
+window.onresize = updatePageFormat;

@@ -3,8 +3,23 @@
 	position: absolute;
 	text-align: center;
 	top: 50%;
-	width: calc(100% - var(--padding));
-	margin-left: calc(0px - var(--padding)/2);
+	width: calc(100% - var(--content-padding));
+	margin-left: calc(0px - var(--content-padding)/2);
+	--glow-width: 5px;
+	/* I didn't want to do this but CSS just be like that */
+	text-shadow:
+		0 0 var(--glow-width) white, 0 0 var(--glow-width) white, 0 0 var(--glow-width) white,
+		0 0 var(--glow-width) white, 0 0 var(--glow-width) white, 0 0 var(--glow-width) white,
+		0 0 var(--glow-width) white, 0 0 var(--glow-width) white, 0 0 var(--glow-width) white,
+		0 0 var(--glow-width) white, 0 0 var(--glow-width) white, 0 0 var(--glow-width) white,
+		0 0 var(--glow-width) white, 0 0 var(--glow-width) white, 0 0 var(--glow-width) white,
+		0 0 var(--glow-width) white, 0 0 var(--glow-width) white, 0 0 var(--glow-width) white,
+		0 0 var(--glow-width) white, 0 0 var(--glow-width) white, 0 0 var(--glow-width) white,
+		0 0 var(--glow-width) white, 0 0 var(--glow-width) white, 0 0 var(--glow-width) white,
+		0 0 var(--glow-width) white, 0 0 var(--glow-width) white, 0 0 var(--glow-width) white,
+		0 0 var(--glow-width) white, 0 0 var(--glow-width) white, 0 0 var(--glow-width) white,
+		0 0 var(--glow-width) white, 0 0 var(--glow-width) white, 0 0 var(--glow-width) white,
+		0 0 var(--glow-width) white, 0 0 var(--glow-width) white, 0 0 var(--glow-width) white;
 }
 
 #content-title-panel h1 {
@@ -17,7 +32,7 @@
 	100% { margin-top: 0px; }
 }
 
-#content-title-panel h2 {
+#content-title-panel h3 {
 	user-select: none;
 	animation-name: bobbing;
 	animation-duration: 2s;
@@ -27,5 +42,12 @@
 }
 
 #content-title-panel > div {
-	transform: translateY(100px);
+	transform: translateY(150px);
+}
+
+#defaultCanvas0 {
+	position: fixed;
+	top: 0;
+	margin-left: -50px;
+	z-index: -1;
 }

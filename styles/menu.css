@@ -9,7 +9,7 @@
 	transition: left 0.2s ease;
 }
 
-#menu-panel:hover {
+#menu-panel.menu-panel-hover {
 	transition: left 0.2s ease;
 	left: 0;
 }
