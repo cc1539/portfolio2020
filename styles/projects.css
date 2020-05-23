@@ -58,6 +58,7 @@
 	background-color: #787888;
 	display: block;
 	float: left;
+	cursor: pointer;
 }
 
 #content-projects-panel .project-image {
