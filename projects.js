@@ -48,6 +48,9 @@ function buildProjectPanel(json) {
 			}
 			closed = !closed;
 		};
+		getClassElem(instance,"project-image-panel").onclick = function() {
+			window.open(project.github,"_blank");
+		};
 		getClassElem(instance,"project-image").src = project.image;
 		getClassElem(instance,"project-desc").innerHTML = project.desc;
 		project_panel.appendChild(instance);
