@@ -57,8 +57,8 @@ window.onload = function() {
 		menu_buttons[i].prepend(icon);
 	}
 	
-	loadResource("assets/data/projects.json",function(){
-		buildProjectPanel(JSON.parse(this.responseText));
+	loadResource("assets/data/projects.json",function(responseText){
+		buildProjectPanel(JSON.parse(responseText));
 	});
 	
 };
