@@ -48,8 +48,8 @@
 		"github":"https://github.com/cc1539/pf19-circadian-tetris"
 	},
 	{
-		"name":"rutgercoleg (actual name)",
-		"desc":"game that encompasses rutgeres experience",
+		"name":"rutgercoleg",
+		"desc":"very silly game that my friends and i threw together",
 		"image":"assets/image/project/ruger.png",
 		"github":"https://github.com/syall/rutgercoleg"
 	}
