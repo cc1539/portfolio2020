@@ -1,13 +1,13 @@
 [
 	{
 		"name":"black hole simulator",
-		"desc":"this program simulates the gravitational field around ur mum lmao",
+		"desc":"this program simulates the effect of a black hole's gravity on light",
 		"image":"assets/image/project/bhlw.png",
 		"github":"https://github.com/cc1539/pf19-bhv-v2"
 	},
 	{
-		"name":"super duper xor cryptosystem",
-		"desc":"download this program b4 encryption becomes illegal",
+		"name":"xor cryptosystem",
+		"desc":"xor encryption/decryption using the digest of a custom hash algorithm for the \"key\".",
 		"image":"assets/image/project/xorcrypto.png",
 		"github":"https://github.com/cc1539/pf19-xor-cryptosystem"
 	},
@@ -24,14 +24,8 @@
 		"github":"https://github.com/cc1539/pf20-fluid-grid"
 	},
 	{
-		"name":"rutgercoleg (actual name)",
-		"desc":"game that encompasses rutgeres experience",
-		"image":"assets/image/project/ruger.png",
-		"github":"https://github.com/syall/rutgercoleg"
-	},
-	{
 		"name":"simple platformer game engine",
-		"desc":"basic physics and scripting language",
+		"desc":"NOT YET UPLOADED; basic physics and scripting language",
 		"image":"",
 		"github":""
 	},
@@ -43,7 +37,7 @@
 	},
 	{
 		"name":"conway's game of many lives",
-		"desc":"game of life but many types of life with randomized rulesets",
+		"desc":"NOT YET UPLOADED; game of life but many types of life with randomized rulesets",
 		"image":"",
 		"github":""
 	},
@@ -52,5 +46,11 @@
 		"desc":"can't clear pieces directly, instead pieces and spaces invert periodically",
 		"image":"assets/image/project/circtetris.png",
 		"github":"https://github.com/cc1539/pf19-circadian-tetris"
+	},
+	{
+		"name":"rutgercoleg (actual name)",
+		"desc":"game that encompasses rutgeres experience",
+		"image":"assets/image/project/ruger.png",
+		"github":"https://github.com/syall/rutgercoleg"
 	}
 ]
