@@ -37,7 +37,7 @@
 	},
 	{
 		"name":"rutgercoleg",
-		"desc":"very silly game that my friends and i threw together",
+		"desc":"A *very* silly game that my friends and I threw together for the Fall 2018 HackRU event.",
 		"image":"assets/image/project/ruger.png",
 		"github":"https://github.com/syall/rutgercoleg"
 	}
