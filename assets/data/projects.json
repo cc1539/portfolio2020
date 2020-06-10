@@ -1,49 +1,37 @@
 [
 	{
 		"name":"black hole simulator",
-		"desc":"this program simulates the effect of a black hole's gravity on light",
+		"desc":"This program simulates the effect of a black hole's gravity on light.",
 		"image":"assets/image/project/bhlw.png",
 		"github":"https://github.com/cc1539/pf19-bhv-v2"
 	},
 	{
 		"name":"xor cryptosystem",
-		"desc":"xor encryption/decryption using the digest of a custom hash algorithm for the \"key\".",
+		"desc":"XOR encryption/decryption using the digest of a custom hash algorithm for the \"key\". This is simply an experiment, and should not be used to protect actual sensitive information from actual attackers.",
 		"image":"assets/image/project/xorcrypto.png",
 		"github":"https://github.com/cc1539/pf19-xor-cryptosystem"
 	},
 	{
 		"name":"lagrange chemical fluid simulation",
-		"desc":"liquids and gels with randomized chemical and physical properties",
+		"desc":"An experiment involving liquids and gels with randomized chemical and physical properties.",
 		"image":"assets/image/project/chemical.png",
 		"github":"https://github.com/cc1539/pf20-chemical-fluid-sim"
 	},
 	{
 		"name":"eulerian fluid simulation",
-		"desc":"surface tension implemented in grid-based fluid simulation",
+		"desc":"A grid-based fluid simulation with momentum and surface tension.",
 		"image":"assets/image/project/gridfluid.png",
 		"github":"https://github.com/cc1539/pf20-fluid-grid"
 	},
 	{
-		"name":"simple platformer game engine",
-		"desc":"NOT YET UPLOADED; basic physics and scripting language",
-		"image":"",
-		"github":""
-	},
-	{
 		"name":"alphabet explosion android app",
-		"desc":"i can make app on phone too, am i part of iot gang yet",
+		"desc":"A very simple app demonstrating Processing's Android mode.",
 		"image":"assets/image/project/androidtest.png",
 		"github":"https://github.com/cc1539/pf19-android-test"
 	},
 	{
-		"name":"conway's game of many lives",
-		"desc":"NOT YET UPLOADED; game of life but many types of life with randomized rulesets",
-		"image":"",
-		"github":""
-	},
-	{
 		"name":"circadian tetris",
-		"desc":"can't clear pieces directly, instead pieces and spaces invert periodically",
+		"desc":"The player doesn't clear pieces directly, but rather waits for when the pieces and spaces invert periodically.",
 		"image":"assets/image/project/circtetris.png",
 		"github":"https://github.com/cc1539/pf19-circadian-tetris"
 	},
