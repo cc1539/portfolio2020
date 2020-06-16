@@ -14,8 +14,6 @@
 	cursor: pointer;
 	border-bottom: 2px #787888 solid;
 	position: absolute;
-	overflow: hidden;
-	white-space: nowrap;
 }
 
 #content-projects-panel .toggle {
