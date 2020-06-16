@@ -31,7 +31,7 @@ window.onload = function() {
 		menu_panel.className = "";
 	});
 	
-	let button_names = ["about","projects","links","misc"];
+	let button_names = ["about","projects","links"/*,"misc"*/];
 	let menu_buttons = document.getElementsByClassName("menu-button");
 	for(let i=0;i<button_names.length;i++) {
 		let icon = document.createElement("span");
