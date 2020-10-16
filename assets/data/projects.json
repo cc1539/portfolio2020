@@ -1,44 +1,56 @@
 [
 	{
-		"name":"black hole simulator",
-		"desc":"This program simulates the effect of a black hole's gravity on light.",
-		"image":"assets/image/project/bhlw.png",
-		"github":"https://github.com/cc1539/pf19-bhv-v2"
+		"name":"BLACK HOLE VISUALIZER",
+		"desc":"Simulates the bending of light around a black hole. Partially inspired by the images of the M87 supermassive black hole taken in April of 2019.",
+		"image":"assets/image/project/bhlw2.png",
+		"github":"https://github.com/cc1539/pf20-bhv"
 	},
 	{
-		"name":"xor cryptosystem",
+		"name":"XOR CRYPTOSYSTEM",
 		"desc":"XOR encryption/decryption using the digest of a custom hash algorithm for the \"key\". This is simply an experiment, and should not be used to protect actual sensitive information from actual attackers.",
 		"image":"assets/image/project/xorcrypto.png",
 		"github":"https://github.com/cc1539/pf19-xor-cryptosystem"
 	},
 	{
-		"name":"lagrange chemical fluid simulation",
-		"desc":"An experiment involving liquids and gels with randomized chemical and physical properties.",
-		"image":"assets/image/project/chemical.png",
-		"github":"https://github.com/cc1539/pf20-chemical-fluid-sim"
+		"name":"2D LAGRANGIAN FLUID SIMULATION - CHEMICALS",
+		"desc":"Uses a technique inspired by SPH to simulate fluids of multiple types, each with randomly determined chemical and physical properties.",
+		"image":"assets/image/project/chemical2.png",
+		"github":"https://github.com/cc1539/pf20-lagrange-fluid-2d"
 	},
 	{
-		"name":"eulerian fluid simulation",
+		"name":"2D LAGRANGIAN FLUID SIMULATION - GRAVITY",
+		"desc":"Uses the Barnes-Hut algorithm together with a technique inspired by MPM to simulate a fluid moving under the influence of its own gravity.",
+		"image":"assets/image/project/gravfluid.png",
+		"github":"https://github.com/cc1539/pf19-mpm-fluid-gravity"
+	},
+	{
+		"name":"2D EULERIAN FLUID SIMULATION - WATER",
 		"desc":"A grid-based fluid simulation with momentum and surface tension.",
 		"image":"assets/image/project/gridfluid.png",
 		"github":"https://github.com/cc1539/pf20-fluid-grid"
 	},
 	{
-		"name":"alphabet explosion android app",
+		"name":"2D EULERIAN FLUID SIMULATION - FIRE",
+		"desc":"A grid-based fluid simulation running on the GPU. Essentially an implementation of this: https://developer.download.nvidia.com/books/HTML/gpugems/gpugems_ch38.html",
+		"image":"assets/image/project/gridfluid2.png",
+		"github":"https://github.com/cc1539/pf20-euler-fluid-2d"
+	},
+	{
+		"name":"2D SCHRODINGER EQUATION SIMULATION",
+		"desc":"My take on modeling the effect of gravity on wavelets evolving according to the Schrodinger equation on a wrapping 2D surface.",
+		"image":"assets/image/project/schrodinger2.png",
+		"github":"https://github.com/cc1539/pf20-schrodinger-2d"
+	},
+	{
+		"name":"ALPHABET EXPLOSION",
 		"desc":"A very simple app demonstrating Processing's Android mode.",
 		"image":"assets/image/project/androidtest.png",
 		"github":"https://github.com/cc1539/pf19-android-test"
 	},
 	{
-		"name":"circadian tetris",
+		"name":"CIRCADIAN TETRIS",
 		"desc":"The player doesn't clear pieces directly, but rather waits for when the pieces and spaces invert periodically.",
 		"image":"assets/image/project/circtetris.png",
 		"github":"https://github.com/cc1539/pf19-circadian-tetris"
-	},
-	{
-		"name":"rutgercoleg",
-		"desc":"A *very* silly game that my friends and I threw together for the Fall 2018 HackRU event.",
-		"image":"assets/image/project/ruger.png",
-		"github":"https://github.com/syall/rutgercoleg"
 	}
 ]
